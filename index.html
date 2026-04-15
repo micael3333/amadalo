@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Amadalõ | O Estilo de Vida Farm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        
+        /* Cores de Identidade */
+        .text-bordo { color: #6a1b29; }
+        .bg-bordo { background-color: #6a1b29; }
+        .border-bordo { border-color: #6a1b29; }
+
+        /* Estilização Premium */
+        .product-card img { transition: transform 0.8s cubic-bezier(0.2, 0, 0.2, 1); }
+        .product-card:hover img { transform: scale(1.03); }
+        .size-btn:hover { border-color: #6a1b29; color: #6a1b29; }
+        .size-btn.active { background-color: #6a1b29; color: white; border-color: #6a1b29; }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <div class="bg-slate-50 text-[10px] py-2 text-center uppercase tracking-[0.2em] font-semibold border-b border-slate-100">
+        Inspirado na Natureza • Entrega Premium em Cuiabá • 10% OFF na Primeira Compra
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex space-x-8 text-[11px] uppercase tracking-widest font-bold">
+                <a href="#" class="hover:text-bordo transition">Nova Coleção</a>
+                <a href="#" class="hover:text-bordo transition">Vestidos</a>
+            </div>
+
+            <div class="text-center">
+                <h1 class="font-serif text-2xl md:text-3xl tracking-tighter text-bordo font-bold">Casa Amadalõ</h1>
+                <p class="text-[8px] uppercase tracking-[0.4em] -mt-1 text-slate-400">Concept Store</p>
+            </div>
+
+            <div class="flex space-x-5 items-center">
+                <i class="fas fa-search text-sm cursor-pointer hover:text-bordo"></i>
+                <i class="far fa-heart text-sm cursor-pointer hover:text-bordo"></i>
+                <div class="relative">
+                    <i class="fas fa-shopping-bag text-sm cursor-pointer hover:text-bordo"></i>
+                    <span class="absolute -top-2 -right-2 bg-bordo text-white text-[9px] w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative h-[85vh] overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1590002901771-3f193f7737e1?q=80&w=2000&auto=format&fit=crop" 
+             class="w-full h-full object-cover" alt="Lifestyle Amadalõ">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
+        
+        <div class="absolute bottom-20 left-10 md:left-20 text-white max-w-xl">
+            <h2 class="font-serif text-5xl md:text-7xl mb-6 italic leading-tight">Onde a natureza <br>encontra a classe.</h2>
+            <p class="text-sm md:text-base mb-8 font-light tracking-wide text-slate-100">
+                Peças exclusivas que traduzem a liberdade das ondas e o frescor das cores tropicais.
+            </p>
+            <button class="border border-white px-12 py-4 uppercase text-xs font-bold tracking-[0.2em] hover:bg-white hover:text-bordo transition-all duration-500">
+                Ver Coleção Verão
+            </button>
+        </div>
+    </section>
+
+    <div class="container mx-auto px-6 py-10 flex justify-center space-x-10 text-[11px] uppercase tracking-[0.2em] font-bold text-slate-400 border-b border-slate-50">
+        <a href="#" class="text-bordo border-b border-bordo pb-1">Tudo</a>
+        <a href="#" class="hover:text-bordo transition">Florais</a>
+        <a href="#" class="hover:text-bordo transition">Linho</a>
+        <a href="#" class="hover:text-bordo transition">Acessórios</a>
+    </div>
+
+    <section class="container mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-y-16 gap-x-10">
+            
+            <div class="product-card group cursor-pointer">
+                <div class="bg-slate-50 mb-6 overflow-hidden aspect-[3/4] relative">
+                    <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=1000&auto=format&fit=crop" 
+                         class="w-full h-full object-cover" alt="Vestido Floral Verde">
+                    
+                    <div class="absolute top-4 left-4 bg-white px-3 py-1 text-[9px] font-bold uppercase tracking-widest border border-slate-100">
+                        Favorito da Estação
+                    </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-serif text-xl">Vestido Longo Selva Verde</h3>
+                        <p class="font-bold text-slate-900 text-sm">R$ 949</p>
+                    </div>
+                    <p class="text-[10px] text-slate-400 uppercase tracking-widest mb-4">Estampa Exclusiva Farm</p>
+                    
+                    <div class="flex space-x-3 mb-6">
+                        <span class="size-btn text-[10px] border border-slate-200 w-8 h-8 flex items-center justify-center rounded-full transition cursor-pointer">P</span>
+                        <span class="size-btn active text-[10px] border border-slate-200 w-8 h-8 flex items-center justify-center rounded-full transition cursor-pointer">M</span>
+                        <span class="size-btn text-[10px] border border-slate-200 w-8 h-8 flex items-center justify-center rounded-full transition cursor-pointer">G</span>
+                    </div>
+
+                    <button class="w-full py-4 bg-slate-900 text-white text-[10px] uppercase font-bold tracking-[0.2em] group-hover:bg-bordo transition duration-500">
+                        Adicionar à Sacola
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card group cursor-pointer">
+                <div class="bg-slate-50 mb-6 overflow-hidden aspect-[3/4] relative">
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1000&auto=format&fit=crop" 
+                         class="w-full h-full object-cover" alt="Vestido Azul">
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-serif text-xl">Midi Carioca Azul Mar</h3>
+                        <p class="font-bold text-slate-900 text-sm">R$ 789</p>
+                    </div>
+                    <p class="text-[10px] text-slate-400 uppercase tracking-widest mb-4">Coleção Resort</p>
+                    
+                    <div class="flex space-x-3 mb-6">
+                        <span class="size-btn text-[10px] border border-slate-200 w-8 h-8 flex items-center justify-center rounded-full transition cursor-pointer">P</span>
+                        <span class="size-btn text-[10px] border border-slate-200 w-8 h-8 flex items-center justify-center rounded-full transition cursor-pointer">M</span>
+                        <span class="size-btn text-[10px] border border-slate-200 w-8 h-8 flex items-center justify-center rounded-full transition cursor-pointer">G</span>
+                    </div>
+
+                    <button class="w-full py-4 bg-slate-900 text-white text-[10px] uppercase font-bold tracking-[0.2em] group-hover:bg-bordo transition duration-500">
+                        Adicionar à Sacola
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card group cursor-pointer">
+                <div class="bg-slate-50 mb-6 overflow-hidden aspect-[3/4] relative">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop" 
+                         class="w-full h-full object-cover" alt="Look Amadalõ">
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-serif text-xl">Conjunto Linho Off-White</h3>
+                        <p class="font-bold text-slate-900 text-sm">R$ 1.250</p>
+                    </div>
+                    <p class="text-[10px] text-slate-400 uppercase tracking-widest mb-4">Alfaiataria Tropical</p>
+                    
+                    <div class="flex space-x-3 mb-6">
+                        <span class="size-btn text-[10px] border border-slate-200 w-8 h-8 flex items-center justify-center rounded-full transition cursor-pointer">P</span>
+                        <span class="size-btn text-[10px] border border-slate-200 w-8 h-8 flex items-center justify-center rounded-full transition cursor-pointer">M</span>
+                        <span class="size-btn text-[10px] border border-slate-200 w-8 h-8 flex items-center justify-center rounded-full transition cursor-pointer">G</span>
+                    </div>
+
+                    <button class="w-full py-4 bg-slate-900 text-white text-[10px] uppercase font-bold tracking-[0.2em] group-hover:bg-bordo transition duration-500">
+                        Adicionar à Sacola
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="fixed bottom-8 right-8 z-50">
+        <a href="#" class="bg-bordo text-white px-8 py-4 rounded-full shadow-2xl flex items-center space-x-3 hover:scale-105 transition-transform duration-300 group">
+            <i class="fab fa-whatsapp text-lg"></i>
+            <span class="text-[10px] uppercase font-bold tracking-widest">Atendimento Privé</span>
+        </a>
+    </div>
+
+</body>
+</html>
